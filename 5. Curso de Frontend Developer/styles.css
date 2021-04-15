@@ -1,12 +1,12 @@
 body {
   margin: 0;
   font-family: 'Muli', sans-serif;
-  background: #8f57fd;
+  background-color: #2eabc7;
+  background-image: linear-gradient(19deg, #2eabc7 0%, #B721FF 100%);
 }
 
 .header {
   align-items: center;
-  background: #8f57fd;
   color: white;
   display: flex;
   height: 100px;
@@ -74,6 +74,42 @@ body {
 .main__title {
   color: white;
   font-size: 25px;
+}
+
+.error{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.error__div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15em;
+  transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	}
+
+	70% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.95);
+	}
+}
+
+.error__div--title{
+  font-size: 100%;
+  color: white;
+
 }
 
 .categories__title {
@@ -176,7 +212,7 @@ body {
 
 .footer {
   align-items: center;
-  background-color: #8f57fd;
+
   display: flex;
   height: 100px;
   width: 100%;
