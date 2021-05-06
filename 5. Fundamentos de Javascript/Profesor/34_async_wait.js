@@ -2,6 +2,12 @@ const API_URL = 'https://swapi.dev/api/'
 const PEOPLE_URL = 'people/:id'
 const opts = { crossDomain: true }
 
+$.get('https://swapi.co/api/people/1', function (err, luke) {
+        console.log(luke.name)
+      })
+
+      console.log('Sacha')
+      
 function obtenerPersonaje(id) {
   return new Promise((resolve, reject) => {
     const url = `${API_URL}${PEOPLE_URL.replace(':id', id)}`
