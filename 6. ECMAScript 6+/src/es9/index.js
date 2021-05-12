@@ -6,18 +6,23 @@ const obj = {
 
 let { country, ...all } = obj;
 console.log(all);
+console.log(obj)
 
 const obj = {
   name: 'Oscar',
-  age: 32
+  age: 32,
 }
 
 const obj1 = {
-  ...obj,
-  country: 'MX'
+  country: 'MX',
 }
 
+const obj2 = {
+  ...obj,
+  ...obj1,
+}
 console.log(obj1);
+console.log(obj2);
 
 
 const helloWorld = () => {
