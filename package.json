@@ -1,0 +1,19 @@
+{
+  "name": "personalproyects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiegoGMarquez/personalProyects.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiegoGMarquez/personalProyects/issues"
+  },
+  "homepage": "https://github.com/DiegoGMarquez/personalProyects#readme"
+}
