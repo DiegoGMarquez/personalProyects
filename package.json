@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DiegoGMarquez/personalProyects/issues"
   },
-  "homepage": "https://github.com/DiegoGMarquez/personalProyects#readme"
+  "homepage": "https://github.com/DiegoGMarquez/personalProyects#readme",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
 }
