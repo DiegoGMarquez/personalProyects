@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <video controls preload="auto"> <!-- Con preload, se descarga antes el video cuando carga la pagina, pero no autoplay
+            El Src se puede usar mas veces, para asegurarse de cargar el video
+            Se reprodusca en un tiempo especifico, al final de src 
+            ej: .mp4#t=10,60" Segundo 10 comienza y Segundo 60 termina  
+            -->
+        <source src="https://storage.coverr.co/videos/Xw8i01OZOr5eMVqw6BvtXjobTNvTClnuq?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6Ijg3NjdFMzIzRjlGQzEzN0E4QTAyIiwiaWF0IjoxNjIzMjgyNjkzfQ.ofhqB-81KGhRH9r60Mykx8XYYj412kCGfFCkSv6CWds">
+        <source src="hola.mp4#t=10,60"/>  <!-- Por si navegador no soporte un formato de video, carga el siguiente src -->
+        <source src="hola.m4v"/>
+    </video> 
+    </section>
+</body>
+</html>
