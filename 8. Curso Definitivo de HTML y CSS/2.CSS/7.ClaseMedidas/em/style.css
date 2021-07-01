@@ -1,0 +1,13 @@
+body {
+    font-size: 20px;
+}
+
+.text-container {
+    font-size: 1.5em;
+}
+
+/* Es importante donde usamos el em, ahora esta tomando de referencia la padre que 
+ya tiene un 1.5em, va sumarle 1.5 de nuevo */
+.text-container div {
+    font-size: 1.5em;
+}

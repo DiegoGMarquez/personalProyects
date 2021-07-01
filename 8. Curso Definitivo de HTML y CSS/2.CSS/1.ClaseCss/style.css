@@ -1,0 +1,14 @@
+p{
+    color: red;
+}
+
+/* class */
+.parrafo{
+    color: blue;
+}
+
+/* ID */
+#texto{
+    color:green;
+    font-size: 24px;
+}
