@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* De esta forma, 1rem vale 10px, y asi es mas facil usar rem */
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.container{
+    border: .3rem solid black;
+
+    /* Aplicar flex al padre, y todos los hijos se van a comportar diferente */
+    display: flex;
+
+    /* Podemos cambiar el orden en el que esta el flex */
+    flex-direction: row;
+
+    /* El contenedor crede dependiendo el contenido */
+    flex-wrap: wrap;
+
+    /* Ordena de forma horizontal */
+    /* - Con flex-end ordena a la derecha */
+    /* - Space-Arround coloca espacio entre los contenedores */
+    /* - Space-evenly coloca  el mismo espacio en los bordes y entre los mismos */
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.box{
+    width: 10rem;
+    height: 10rem;
+}
+
+.box1{
+    background-color: blue;
+}
+.box2{
+    background-color: blueviolet;
+}
+.box3{
+    background-color: burlywood;
+}
+.box4{
+    background-color: cadetblue;
+}
+.box5{
+    background-color: coral;
+}
+.box6{
+    background-color: salmon;
+}

@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* De esta forma, 1rem vale 10px, y asi es mas facil usar rem */
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.container{
+    border: .3rem solid black;
+    /* Ocupa el 50% de la pantalla */
+    /* height: 50vh; */
+
+    /* Ordenar de forma vertical */
+    /* Center: Al centro de forma vertical */
+    /* Flex-end: Abajo del todo */
+    /* Strech: Crecen el 100% de su contenedor padre */
+    /* Baseline: Coloca la altura del contenido */
+    /* align-items: stretch; */
+
+    /* Aplicar flex al padre, y todos los hijos se van a comportar diferente */
+    display: flex;
+    flex-wrap: wrap;
+
+    /* Con order, cambiamos el orden en el que aparecen, los que no tengan un orden van primero */
+}
+
+.box{
+    /* width: 10rem; */
+    height: 10rem;
+    flex-basis: 10rem;
+    flex-grow: 1;
+}
+
+.box1{
+    background-color: blue;
+    /* Llenan el espacio vacio hasta llegar al 100% */
+    /* flex-grow: 1; */
+
+    /* order: 1; */
+}
+.box2{
+    background-color: blueviolet;
+    /* flex-grow: 1; */
+    /* order: 3; */
+}
+.box3{
+    background-color: burlywood;
+    
+}
+.box4{
+    background-color: cadetblue;
+}
+.box5{
+    background-color: coral;
+    /* order: 5; */
+}
+.box6{
+    background-color: salmon;
+    /* order: 2; */
+}
