@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* De esta forma, 1rem vale 10px, y asi es mas facil usar rem */
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+/* --------------------------- */
+/* No tiene accesibilidad */
+/* h1{
+    font-size: 30px;
+}
+
+p{
+    font-size: 18px;
+} */
+/* -------------------------------------- */
+
+/* Con rem, una medida relativa es accesible */
+h1{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1.8rem;
+}

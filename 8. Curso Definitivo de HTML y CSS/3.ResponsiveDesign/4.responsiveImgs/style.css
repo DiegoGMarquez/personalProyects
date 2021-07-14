@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* De esta forma, 1rem vale 10px, y asi es mas facil usar rem */
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+/* <!-- No es buena practica, es muy pesada --> */
+/* .picture{
+    width: 500px;
+    height: 400px;
+}
+img{
+    width: 100%;
+} */
+
+
+/* Es una buena practica con picture */
+img{
+    width: 100%;
+}
