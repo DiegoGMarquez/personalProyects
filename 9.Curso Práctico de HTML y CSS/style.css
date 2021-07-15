@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+
+/* De esta forma, 1rem vale 10px, y asi es mas facil usar rem */
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+}
