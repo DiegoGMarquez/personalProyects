@@ -18,184 +18,97 @@ a{
     text-decoration: none;
     cursor: pointer;
 }
+
 header{
-    width: 100%;
-    height: 60px;
-}
-
-header nav{
-    /* Con esto envio el contenido a la derecha */
-    display: flex;
-    justify-content: flex-end;
-}
-
-header .nav-right-section{
-    padding-left: 7px;
-    width: 250px;
-    height: auto;
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-}
-
-nav .nav-right-section a{
-    color: #000000;
-    padding: 0 5px;
-    margin-right: 15px;
-}
-
-nav .nav-right-section a:hover{
-    text-decoration: underline;
-}
-
-nav .nav-right-section .menu-icon{
-    background-image: url('https://static.thenounproject.com/png/756729-200.png');
-    /* Si es muy grande, se repite para llenar, con esto no pasa */
-    background-repeat: no-repeat;
-    background-position: center;
-    /* Se aproxime al tamaño de mi contenedor */
-    background-size: contain;
-    width: 28px;
-    height: 28px;
-}
-
-nav .nav-right-section img{
-    border-radius: 50%;
-    margin-left: 10px;
-}
-
-
-main{
-    margin-top: 190px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
     text-align: center;
-}
-
-main .main-logo{
-    width: 530px;
-    /* Con el auto, divide el espacio vacio y es mitad y mitad */
-    margin: 0 auto;
-    margin-bottom: 35px;
-}
-
-main .main-logo img{
-    width: 272px;
-}
-
-main .main-input{
-    width: 535px;
-    margin: 0 auto;
-    margin-bottom: 35px;
-}
-
-main .main-input-container{
-    width: 530px;
-    border-radius: 100px;
-    border: 1px solid #dfe1e5;
+    height: 200px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
+}
+.header-logo img{
+    width: 176px;
+    margin-top: 30px;
 }
 
-main .main-input input{
-    width: 450px;
-    height: 45px;
-    border: none;
-    outline: none;
-    padding-left: 15px;
+.central-section a{
+    color: #36c;
     font-size: 1.6rem;
-    color: rgba(0, 0, 0, 0.87);
 }
 
-
-main .main-input-container:hover{
-    box-shadow: 0 1px 6px 0 #20212447;
-    border-color: #dfe1e500;
-}
-
-main .main-input .search-icon{
-    background-image: url('https://images.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-icono-de-b-squeda-by-vexels.png');
-    background-repeat: none;
-    background-position: center;
-    background-size: contain;
-    width: 18px;
-    height: 18px;
-}
-
-main .main-input .micro-icon{
-    background-image: url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png');
-    background-repeat: none;
-    background-position: center;
-    background-size: contain;
-    width: 23px;
-    height: 23px;
-    cursor: pointer;
-}
-
-main .main-buttons{
-    width: 530px;
-    margin: 0 auto;
-}
-
-main .main-buttons div{
-    display: inline-block;
-    margin: 0 5px;
-}
-
-main .main-buttons button{
-    height: 36px;
-    background-color: rgb(248, 249, 250);
-    border: none;
-    font-size: 1.4rem;
-    color: rgb(60, 64, 67);
-    border-radius: 5px;
-    padding: 0 15px;
-}
-
-main .main-buttons button:hover{
-    border: 1px solid #c6c6c6;
-    box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
-    color: #222;
-    background-color: #f8f8f8;
-    cursor: pointer;
-}
-
-footer{
-    width: 100%;
-    height: 50px;
-    /* Con esto el footer siempre va a estar abajo del todo */
-    position: absolute;
-    bottom: 0;
-
-    display: grid;
-    /* Son 2 fracciones */
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+.central-section p{
+    color: #54595d;
     font-size: 1.3rem;
-    background-color: #f2f2f2;
-    border-top: 1px solid #e4e4e4 ;
 }
 
-footer ul{
-    margin: 10px;
-    list-style: none;
-    display: flex;
-    padding-left: 0;
+.central-section{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* display: flex; */
+    /* flex-direction: column; */
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    vertical-align: middle;
+    max-width: 100%;
+    height: 34rem;
+    max-width: 100%;
+    width: 56.6rem;
 }
 
-.footer-left{
-    justify-self: left;
+.central-section div{
+    cursor: pointer;
+    position: absolute;
 }
 
-.footer-right{
-    justify-self: right;
+.box1{
+    right: 60%;
 }
 
-footer ul li a{
-    margin: 10px;
-    color: #5f6368;
+.box2{
+    left: 60%;
 }
 
-footer ul li a:hover{
-    text-decoration: underline;
+.box3{
+    right: 70%;
+    top: 20%;
 }
+
+.box4{
+    left: 70%;
+    top: 20%;
+}
+
+.box5{
+    right: 72%;
+    top: 40%;
+}
+
+.box6{
+    left: 72%;
+    top: 40%;
+}
+
+.box7{
+    right: 70%;
+    top: 60%;
+}
+
+.box8{
+    left: 70%;
+    top: 60%;
+}
+
+.box9{
+    right: 60%;
+    top: 80%;
+}
+
+.box10{
+    left: 60%;
+    top: 80%;
+}
+
+
+
