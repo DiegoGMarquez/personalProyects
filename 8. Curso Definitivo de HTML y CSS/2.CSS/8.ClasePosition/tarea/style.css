@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* De esta forma, 1rem vale 10px, y asi es mas facil usar rem */
+html{
+    font-size: 62.5%;
+}
+
+.container {
+    justify-content: center;
+    display: flex;
+    /* align-items: center; */
+    align-items: baseline;
+    /* position: absolute; */
+    background-color: cornflowerblue;
+    font-size: 2rem;
+    padding: 35px;
+    min-width: 500px;
+    max-width: 1000px;
+    text-align: center;
+    border: 3px black dotted;
+    margin: 50px;
+}
+
+.titulo {  
+    position: relative;
+    bottom: 55px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    min-width: 250px;
+    max-width: 300px;
+    border-radius: 4%;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+
+/* .parrafo {
+
+} */

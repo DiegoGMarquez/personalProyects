@@ -1,0 +1,19 @@
+h2 + p {
+    /* Combinador hermano cercano
+        Adjacent Sibling
+        Nos ahorramos clases
+        Necesita estar adjayacente a un h2, para aplicarse, el h2 tiene 
+        que estar arriba
+    */
+    color: red;
+}
+
+h2 ~ p {
+    /* Combinador hermano general
+    General Sibling
+    Si existe un la etiqueta hermano h2, se aplica el estilo a las etiquetas p, el h2 tiene 
+    que estar arriba para aplicar
+    */
+    /* color: blue; */
+}
+

@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* De esta forma, 1rem vale 10px, y asi es mas facil usar rem */
+html{
+    font-size: 62.5%;
+}
+
+main {
+    /* Va a ocupar el 100% del main con esta medida */
+    width: 100vw;
+    height: 100vh;
+    background-color: purple;
+}
+
+section {
+    width: 80%;
+    /* El tamaño minimo va a ser este */
+    min-width: 320px;
+    /* Tamaño maximo del section */
+    max-width: 500px;
+    min-height: 500px;
+    /* Al no colocar un maximo, es automatico, se va a adaptar al contenido, y no provoca un overflow
+     */
+    background-color: red;
+    margin: 0 auto;
+}

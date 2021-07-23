@@ -1,0 +1,11 @@
+/* Combinador hijo, Child */
+div > p {
+    /* De el Padre Div, que sea hijo P */
+    color: red;
+}
+
+/* Combinador decendiente */
+div p {
+    /* Todas las etiquetas P que esten dentro de un Div */
+    color: blue;
+}

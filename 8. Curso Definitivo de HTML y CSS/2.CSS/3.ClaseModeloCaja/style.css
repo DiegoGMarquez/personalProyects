@@ -1,0 +1,14 @@
+* {
+    /* Eliminamos los paddings y margin por default del navegador */
+    /* Suma el padding y el border al Width del elemento */
+    box-sizing: border-box;
+    padding: 0;  
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    height: 500px;
+    border: 10px solid grey;
+    padding: 20px 35px;
+}

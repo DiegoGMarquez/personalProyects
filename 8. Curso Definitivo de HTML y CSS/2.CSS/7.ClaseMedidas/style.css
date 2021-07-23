@@ -1,0 +1,14 @@
+main{
+    background-color: red;
+    width: 100%;
+    height: 500px;
+}
+
+p{
+    /* Medida absoluta 
+    font-size: 18px; */
+    /* Medida relativa, toma como valor el por defecto de html, de 16px, y 
+    coloca una fuente de 8px, la mitad
+    font-size: 50%; */
+    font-size: 16px;
+}

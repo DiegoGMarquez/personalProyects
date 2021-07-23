@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif
+}
+
+/* De esta forma, 1rem vale 10px, y asi es mas facil usar rem */
+html{
+    /* font-size: 62.5%; */
+}
+
+header{
+    display: inline-flex;
+    width: 100%;
+    background-color: black;
+}
+
+figure{
+    display: inline-block;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.menu{
+    padding: 25px;
+    text-align: right;
+    position: relative;
+    width: 100%;
+}
+.menu ul li{
+    display: inline-block;
+    color: white;
+    padding-left: 10px;
+}
+
+main{
+    display: flex;
+    height: 50vw;
+    min-height: 800px;
+}
+
+.lateral{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to right top, #b63547, #ae273b, #a61530, #a30f26, #9f091c, #9b0612, #960404);
+}
+
+.element{
+    background-color: rgb(211, 80, 80);
+    padding: 20px;
+    width: 80%;
+    height: 22.7%;
+}
+
+.principal{
+    width: 80%;
+    background-color: black;
+    color: white;
+    padding: 25px
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 25px;
+}
+
+.redes{
+    width: 100%;
+    padding-right: 25px;
+}
