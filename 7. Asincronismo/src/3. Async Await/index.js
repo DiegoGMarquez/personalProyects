@@ -14,5 +14,4 @@ const doSomething = async () => {
 console.log('Before')
 doSomething()
 console.log('After   ')
-console.log('Probando 122')
 
