@@ -182,8 +182,38 @@ header p{
     background-size: 23px;
 }
 
+.language-section {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.language-section button:hover{
+    background-color: #fff;
+}
+
 .language-section button{
     color: #36c;
-    background-color: #a2a9b1;
-    font-weight: bold;
+    background-color: #f8f9fa;
+    font-weight: 700;
+    padding: 7px 15px;
+    font-size: 1.4rem;
+    border: 1px solid #a2a9b1;
+    cursor:pointer;
+}
+
+.footer-final{
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.footer-final a{
+    color: #36c;
+}
+
+.footer-final a:hover{
+    text-decoration: underline;
+}
+
+footer .footer-decoration::after{
+    content "•;!";
 }
