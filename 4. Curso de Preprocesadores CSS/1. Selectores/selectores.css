@@ -1,0 +1,86 @@
+/* Selector universal */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Selector de etiqueta */
+  p {
+    color: blue;
+  }
+  h1,h2,h3,h4,h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+  }
+  
+  /* Selector anidado (Para especificar selectores dentro de otros)*/
+  span {
+    color: black;
+  }
+  p span {
+    color: red;
+  }
+  
+  /* Selector de ID (Debe ser único en HTML, no se puede repetir)*/
+  #verde {
+    color: green;
+  }
+  
+  /* Selector de clase (Puede estar presente en varios elementos HTML, es el más usado) */
+  .verde {
+    color: green;
+  }
+  
+  /* Selector de hijos (Se aplica para hijos directos) */
+  p > span {
+    color: red;
+  }
+  span {
+    color: green;
+  }
+  
+  /* Selector adyacente (Se aplica si esta seguido del elemento especificado, en este caso se aplica el color rojo al elemento h2 si está después de otro elemento h2 y así sucesivamente se puede sumar más elementos) */
+  h2 {
+    color: black;
+  }
+  h2 + h2 {
+    color: red;
+  }
+  
+  /* Selector de aributos */
+  input[type='number'] {
+    border: black;
+  }
+  input[type='email'] {
+    border: red;
+  }
+  /*
+  !important = 1000000
+  ID = 100 puntos
+  Clase = 10 puntos
+  Etiqueta = 1 punto
+  Los puntajes son acumulables
+  */
+  
+  
+  span {
+    color: black;
+  } /* 1 punto*/
+  h2.especial span {
+    color: red;
+  } /* 12 puntos */
+  h2#superespecial span {
+    color: green;
+  } /* 102 puntos */
+  
+  
+  h2.special span {
+    color: red;
+  } /* 12 puntos (Gana) */
+  .especial span {
+    color: black;
+  } /* 11 puntos */
+  
+  span {
+    color: black !important;
+  } /* 1000000 puntos (Por buenas prácticas no es recomendable usarlo ya que es muy difícil sobrescribirlo, solo se usa en caso que no se tenga acceso al código CSS y se necesite sobrescribir un valor. "Por cada uso de !important muere un oso en el ártico :(")*/
