@@ -1,0 +1,20 @@
+extends componentes/plantilla.pug
+block contenidos
+    main.main
+        section.menu
+            .menu__contenido
+                h2 Menu
+                ul
+                    each enlace in enlaces
+                        li=enlace
+        section.principal
+            .principal__contenido
+                h2 #{titulos[0]}
+                p
+                    | Lorem ipsum dolor sit amet consectetur adipisicing.Lorem ipsum dolor sit amet consectetur adipisicing.
+                    | Lorem ipsum dolor sit amet consectetur adipisicing.Lorem ipsum dolor sit amet consectetur adipisicing.
+                    | Lorem ipsum dolor sit amet consectetur adipisicing.Lorem ipsum dolor sit amet consectetur adipisicing.
+                p 
+                    | Lorem ipsum dolor sit amet consectetur adipisicing.Lorem ipsum dolor sit amet consectetur adipisicing.                | Lorem ipsum dolor sit amet consectetur adipisicing.Lorem ipsum dolor sit amet consectetur adipisicing.
+                    | Lorem ipsum dolor sit amet consectetur adipisicing.Lorem ipsum dolor sit amet consectetur adipisicing.
+                a.boton Ver Mas
