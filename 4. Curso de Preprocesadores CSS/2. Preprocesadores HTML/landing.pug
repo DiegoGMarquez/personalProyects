@@ -1,24 +1,8 @@
--var titulo = "Titulo Principal"
--var titulos = ["Titulos Principal", "Subtitulo 1", "Subtitulo 2", "Subtitulo 3"]
--var usuario = "David"
-mixin caja(imagen,titulo,contenido)
-    .caja
-        .caja__imagen: img(src="./images/"+imagen, alt="")
-        .caja__contenido
-            h3=titulo
-            p=contenido
-doctype html
-html
-    include '../componentes/head.pug'
-    //- En el caso de bloques que no se van a modificar, ej el header o footer, podemos usar includes
-    body
-        header 
-            h1 PlatziGames
-            //- Uso de condicionales, en caso de que el usuario ya exista o la variable
-            if usuario
-                a Hola #{usuario}
-            else
-                a.boton Registro
+extends componentes/plantilla.pug
+//- Tenemos que especificar que se añade el contenido con block
+//- Sin el extend, solo con include va a meter todo dentro del header
+block contenidos
+        //- Lo mismo que el include, pero te permite añadir codigo adicional
         section.intro
             //- En el caso de una sola etiqueta, con poner .tanto crea un div con esa etiqueta dentro :
             .intro__imagen: img(src="./images/imagen.png", alt="")

@@ -1,0 +1,9 @@
+include configuraciones.pug
+doctype html
+html
+    include head.pug
+    //- En el caso de bloques que no se van a modificar, ej el header o footer, podemos usar includes
+    body
+        include header.pug
+        block contenidos
+        include footer.pug
