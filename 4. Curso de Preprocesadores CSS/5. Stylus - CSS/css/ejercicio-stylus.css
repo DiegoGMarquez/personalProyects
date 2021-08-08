@@ -1,3 +1,15 @@
+h3 {
+  font-size: 20px;
+  margin: 0;
+}
+h2 {
+  font-size: 25px;
+  margin: 0;
+}
+h1 {
+  font-size: 30px;
+  margin: 0;
+}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -30,13 +42,14 @@ body {
   width: 96%;
   margin: 0 auto;
   padding: 30px 0;
+  text-align: center;
 }
 .encabezado--con-filtros h2 {
   margin-top: 10px;
-  text-transform: uppercase;
-  font-weight: 500;
   font-size: 50px;
   font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .encabezado--con-filtros .filtros {
   width: 250px;
@@ -48,8 +61,9 @@ body {
           box-shadow: 0px 20px 33px 0px rgba(0,0,0,0.2);
 }
 .encabezado--con-filtros .filtros span {
-  text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .encabezado--con-filtros .filtros a {
   margin-left: 20px;
@@ -57,12 +71,16 @@ body {
   color: #333;
 }
 .contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1500px;
   margin-bottom: 40px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 96%;
   margin: 0 auto;
@@ -70,28 +88,38 @@ body {
 }
 .caja {
   max-width: 430px;
+  width: 400px;
+  margin-bottom: 40px;
   background-color: #fff;
   -webkit-box-shadow: 0px 20px 33px 0px rgba(0,0,0,0.2);
           box-shadow: 0px 20px 33px 0px rgba(0,0,0,0.2);
+}
+.caja__imagen {
+  width: 400px;
+}
+.caja__imagen img {
+  width: 400px;
 }
 .caja__contenido {
   padding: 20px;
   background-color: #fff;
 }
 .caja__contenido span {
-  text-transform: uppercase;
   color: #8841da;
   font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .caja__contenido h3 {
-  text-transform: uppercase;
   font-weight: normal;
   font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .estadistica--articulos {
   height: 70px;
   padding: 20px;
-  border-top: 1px solid #333;
+  border-top: 1px solid rgba(51,51,51,0.3);
 }
 .estadistica--articulos ul {
   display: -webkit-box;
